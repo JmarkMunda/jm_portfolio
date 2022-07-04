@@ -1,18 +1,21 @@
 import React from 'react';
+import { BsPersonCheck } from 'react-icons/bs';
+import { GiGraduateCap } from 'react-icons/gi';
+import { BiMedal } from 'react-icons/bi';
 
-const message = [
+const messages = [
     {
         id: 1,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta quaerat aut. Ut saepe iste praesentium sunt, laudantium nesciunt impedit!"
+        text: "An passionate and motivated individual capable of doing many things with eagerness to learn new technologies to build a successful career."
     },
     {
         id: 2,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta quaerat aut. Ut saepe iste praesentium sunt, laudantium nesciunt impedit!"
+        text: "I'm seeking a challenging situation where I can grow a lot, showcase my potential, and be part of the organization's success."
     },
     {
         id: 3,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta quaerat aut. Ut saepe iste praesentium sunt, laudantium nesciunt impedit!"
-    }
+        text: "I'm a graduating student from STI College with basic knowledge on web development and currently looking for entry level/junior position."
+    },
 ]
 
 const personal = {
@@ -99,3 +102,23 @@ const awards = [
         from: 'RMES Globe Telecom'
     },
 ]
+
+const tabs = [
+    {
+        id: 1,
+        text: "Personal Info",
+        icon: <BsPersonCheck />
+    },
+    {
+        id: 2,
+        text: "Educational Background",
+        icon: <GiGraduateCap />
+    },
+    {
+        id: 3,
+        text: "Awards",
+        icon: <BiMedal />
+    },
+]
+
+export {messages, personal, education, awards, tabs};

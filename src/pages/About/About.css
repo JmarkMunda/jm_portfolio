@@ -1,9 +1,11 @@
 
 .about-section {
-    position: relative;
     width: 100%;
     height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--clr-gradient-background-reverse); */
 }
 
 .about-header {
@@ -15,15 +17,94 @@
     z-index: -1;
 }
 
-.about-text-container {
+.about-container {
     width: 50%;
+    height: auto;
+    padding: 2rem;
 }
 
-.about-text-container h2 {
+/*============= 
+    Text side
+  ============= */
+.about-container h2 {
     margin-bottom: 2rem;
 }
 
-.about-text-container p {
-    color: red;
+.about-container p {
     margin-bottom: var(--margin-bottom);
+}
+
+/*============= 
+  Download Button
+  ============= */
+.btn {
+    position: relative;
+    padding: var(--button-padding);
+    background-color: transparent;
+    border: 1px solid var(--clr-primary-gray);
+    border-radius: 20px;
+    transition: all .3s ease-in;
+}
+.btn:hover {
+    color: #fff;
+    cursor: grab;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: var(--clr-primary-gray);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.btn:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+/*============= 
+    Photo side
+  ============= */
+
+.about-container img {
+    height: 14rem;
+    /* filter: drop-shadow(8px 5px 5px rgb(92, 92, 92)); */
+}
+.about-container.photo {
+    text-align: center;
+    padding: 6rem;
+}
+
+/*============= 
+    Underline
+  ============= */
+.underline {
+    border-top: 1px solid var(--clr-primary-gray-alpha);
+    margin: 1rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons button{
+    background-color: transparent;
+    color: var(--clr-primary-gray-2);
+    cursor: pointer;
+    border: none;
+    font-size: 1.8rem;
+    margin: 0 0.8rem;
+    transition: all .2s ease;
+}
+
+.social-icons button:hover {
+    transform: scale(1.2);
+    color: var(--clr-primary-gray);
 }

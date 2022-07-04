@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--clr-gradient-background);
 }
 
 .home-text h3 {
