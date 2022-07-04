@@ -8,7 +8,7 @@ import profileImg from "../../assets/user-profile.svg";
 
 const About = () => {
   return (
-    <section id="about" className="about-section container">
+    <section id="about" className="container">
       {/* <h2 className="about-header">ABOUT ME</h2> */}
       <article className="about-container text">
         <h2>Hi there!</h2>
