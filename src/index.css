@@ -1,20 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Splash&display=swap');
+/* 
+font-family: 'Splash', cursive;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+
+:root {
+    /* COLORS */
+    --clr-primary-gray: rgb(50, 50, 50);
+    --clr-primary-gray-2: rgb(70, 70, 70);
+    --clr-primary-gray-3: rgb(90, 90, 90);
+    --clr-primary-gray-alpha: rgba(90, 90, 90, 0.1);
+    --clr-secondary-aqua: rgb(89, 243, 235);
+
+    /* BACKGROUND COLORS */
+    --clr-gradient-background: linear-gradient(240deg, rgb(220, 220, 220), #fff);
+
+    /* PADDING */
+    --main-side-padding: 0 6rem;
+    
+    /* MARGINS */
+    --margin-bottom: 1rem;
+    
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background-color: var(--clr-primary-gray);
+
+}
+::-webkit-scrollbar-track{
+    background: var(--clr-gradient-background);
+}
+
+.container {
+    padding: 8rem 10rem;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: var(--clr-gradient-background);
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 2rem;
 }
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        color: blue;
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 1rem 2rem;
+    }
+    
+}
+
