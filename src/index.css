@@ -21,6 +21,7 @@ font-family: 'Josefin Sans', sans-serif;
     /* PADDING */
     --main-side-padding: 0 6rem;
     --button-padding: 1rem 3rem;    
+   
     
     /* MARGINS */
     --margin-bottom: 1rem;
@@ -48,6 +49,14 @@ font-family: 'Josefin Sans', sans-serif;
     padding: 4rem;
 }
 
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +67,7 @@ font-family: 'Josefin Sans', sans-serif;
 
 h1 {
     font-size: 2rem;
+    white-space: nowrap;
 }
 h2 {
     font-size: 1.5rem;
@@ -69,7 +79,7 @@ h3 {
 @media screen and (min-width: 900px) {
     h1 {
         color: blue;
-        font-size: 6rem;
+        font-size: 5rem;
     }
     h2 {
         font-size: 4rem;
@@ -85,7 +95,10 @@ h3 {
 
 @media screen and (max-width: 500px) {
     .container {
-        padding: 1rem 2rem;
+        padding: 2rem;
+    }
+    section {
+        flex-direction: column;
     }
     
 }

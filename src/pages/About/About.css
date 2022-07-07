@@ -1,12 +1,5 @@
 
-.about-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: var(--clr-gradient-background-reverse); */
-}
+
 
 .about-header {
     display: flex;
@@ -74,12 +67,12 @@
   ============= */
 
 .about-container img {
+    width: 100%;   
     height: 14rem;
     /* filter: drop-shadow(8px 5px 5px rgb(92, 92, 92)); */
 }
 .about-container.photo {
     text-align: center;
-    padding: 6rem;
 }
 
 /*============= 
@@ -107,4 +100,21 @@
 .social-icons button:hover {
     transform: scale(1.2);
     color: var(--clr-primary-gray);
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .about-container {
+        width: 100%;
+    }
+}
+
+#tabs-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

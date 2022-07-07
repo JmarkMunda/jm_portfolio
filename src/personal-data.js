@@ -1,9 +1,9 @@
 import React from 'react';
-import { BsPersonCheck } from 'react-icons/bs';
-import { GiGraduateCap } from 'react-icons/gi';
+import { MdPersonOutline } from 'react-icons/md';
 import { BiMedal } from 'react-icons/bi';
+import { GiBlackBook } from 'react-icons/gi';
 
-const messages = [
+export const messages = [
     {
         id: 1,
         text: "An passionate and motivated individual capable of doing many things with eagerness to learn new technologies to build a successful career."
@@ -18,107 +18,124 @@ const messages = [
     },
 ]
 
-const personal = {
-    name: "Jay Mark B. Munda",
-    age: "23 years old",
-    gender: "Male",
-    Birthday: "April 26, 1999",
-    Address: "Blk 21 Lot 16 Phase 1 Balagtas Heights Brgy.Santol Balagtas, Bulacan"
-}
 
-
-const education = [
+const personal = [
     {
-        id: 1,
-        level: "Elementary",
-        school: "Kapitbahayan Elementary School",
-        course: "",
-        date: "2004 - 2011"
+        label: 'Name:',
+        text: "Jay Mark B. Munda",
     },
     {
-        id: 2,
-        level: "High School",
-        school: "Pres. Sergio Osmena High School",
-        course: "",
-        date: "2011 - 2014"
+        label: 'Age:',
+        text: "23 years old",
     },
     {
-        id: 3,
-        level: "High School",
-        school: "Bunsuran National High School",
-        course: "",
-        date: "2014 - 2015"
+        label: "Gender: ",
+        text: "Male",
     },
     {
-        id: 4,
-        level: "Vocational",
-        school: "ACCESS Computer College",
-        course: "Computer Technician",
-        date: "2015 - 2017"
+        label: "Birthday: ",
+        text: "April 26, 1999",
     },
     {
-        id: 5,
-        level: "College",
-        school: "STI College Balagtas",
-        course: "Bachelor of Science in Information Technology",
-        date: "2018 - 2022"
+        label: "Address:  ",
+        text: "Blk 21 Lot 16 Phase 1 Balagtas Heights Brgy.Santol Balagtas, Bulacan"
     },
-]
-
-const awards = [
-    {
-        id: 1,
-        title: `Deans's List`,
-        from: 'STI College Balagtas'
-    },
-    {
-        id: 2,
-        title: `Python Essentials Course Completion`,
-        from: 'Python Institute'
-    },
-    {
-        id: 3,
-        title: `Compute Cloud Services Participation`,
-        from: 'Huawei'
-    },
-    {
-        id: 4,
-        title: `Image Management & Elastic Volume Service Participation`,
-        from: 'Huawei'
-    },
-    {
-        id: 5,
-        title: `SAP Business One Certificate`,
-        from: 'STI College Balagtas'
-    },
-    {
-        id: 6,
-        title: `Advance SAP Certificate`,
-        from: 'STI College Balagtas'
-    },
-    {
-        id: 7,
-        title: `Data Encoder OJT Certificate`,
-        from: 'RMES Globe Telecom'
-    },
+        
+        
+        
+        
+        
 ]
 
 const tabs = [
     {
         id: 1,
-        text: "Personal Info",
-        icon: <BsPersonCheck />
-    },
+        title: 'Personal',
+        icon: <MdPersonOutline />,
+    }, 
     {
         id: 2,
-        text: "Educational Background",
-        icon: <GiGraduateCap />
+        title: 'Education',
+        icon: <GiBlackBook />,
     },
     {
         id: 3,
-        text: "Awards",
-        icon: <BiMedal />
-    },
+        title: 'Awards',
+        icon: <BiMedal />,
+    }
 ]
 
-export {messages, personal, education, awards, tabs};
+
+const education = [
+        {
+            id: 1,
+            level: "Elementary",
+            location: "Kapitbahayan Elementary School",
+            date: "2004 - 2011",
+        },
+        {
+            id: 2,
+            level: "High School",
+            location: "Pres. Sergio Osmena High School",
+            date: "2011 - 2014",
+        },
+        {
+            id: 3,
+            level: "High School",
+            location: "Bunsuran National High School",
+            date: "2014 - 2015",
+        },
+        {
+            id: 4,
+            level: "Vocational",
+            location: "ACCESS Computer College - Computer Technician",
+            date: "2015 - 2017",
+        },
+        {
+            id: 5,
+            level: "College",
+            location: "STI College Balagtas - Bachelor of Science in Information Technology",
+            date: "2018 - 2022"
+        }
+]
+
+const awards = [
+        {
+            id: 1,
+            text: `Deans's List`,
+            from: 'STI College Balagtas'
+        },
+        {
+            id: 2,
+            text: `Python Essentials Course Completion`,
+            from: 'Python Institute'
+        },
+        {
+            id: 3,
+            text: `Compute Cloud Services Participation`,
+            from: 'Huawei'
+        },
+        {
+            id: 4,
+            text: `Image Management & Elastic Volume Service Participation`,
+            from: 'Huawei'
+           
+        },
+        {
+            id: 5,
+            text: `SAP Business One Certificate`,
+            from: 'STI College Balagtas'
+        },
+        {
+            id: 6,
+            text: `Advance SAP Certificate`,
+            from: 'STI College Balagtas'
+        },
+        {
+            id: 7,
+            text: `Data Encoder OJT Certificate`,
+            from: 'RMES Globe Telecom'
+        }        
+]
+
+export { tabs, personal, education, awards}

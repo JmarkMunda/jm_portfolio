@@ -1,0 +1,83 @@
+
+.tabs-container {
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    height: 24rem;
+}
+
+
+/* ====================
+    LEFT TAB CONTAINER
+    ==================== */
+.tabs-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: var(--button-padding);
+    background-color: transparent;
+    border: none;
+    margin-bottom: var(--margin-bottom);
+}
+
+.tab:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab span {
+    margin-right: 0.5rem;
+    padding: auto;
+    vertical-align: middle;
+}
+
+/* ====================
+    RIGHT TAB CONTAINER
+    ==================== */
+.tabs-right {
+    overflow-y: scroll;
+    margin-left: 5rem;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.tabs-right > div {
+    margin-bottom: 2rem;
+}
+
+.tabs-right p {
+    margin: 0 0 1rem 1rem;
+}
+
+.tabs-right p:nth-child(2) {
+    font-style: italic;
+    color: var(--clr-primary-gray-2);
+}
+
+.tabs-right p:nth-child(3) {
+    color: var(--clr-primary-gray-3);
+}
+
+.arrow-icon {
+    margin: 0 6px 0 -20px;
+}
+
+/*  ===========
+    DYNAMIC TABS 
+    ============ */
+.active-tab {
+    border-left: 2px solid var(--clr-primary-gray);
+    font-weight: bold;
+}
+
+.inactive-tab-info {
+    display: none;
+}
+
+.tab-info {
+    border-bottom: 1px solid var(--clr-primary-gray-alpha);
+}
