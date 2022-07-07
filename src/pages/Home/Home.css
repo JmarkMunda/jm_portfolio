@@ -4,8 +4,9 @@
     ============= */
 #home {
     background: var(--clr-gradient-background);
+    position: relative;
 }
-
+/*  TEXT ==================== */
 .home-text h3 {
     margin: 0 0 10px 5px;
     color: var(--clr-primary-gray-3);
@@ -14,10 +15,11 @@
     color: var(--clr-primary-gray);
 }
 
-/* Arrow Button */
+/* ARROW BUTTON ================= */
 .arrow-btn {
     position: absolute;
     bottom: 2rem;
+    left: 50%;
     animation: 2s movingBtn infinite;
 }
 .arrow-btn button { 

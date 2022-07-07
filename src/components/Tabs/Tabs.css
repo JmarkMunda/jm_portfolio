@@ -22,6 +22,7 @@
     background-color: transparent;
     border: none;
     margin-bottom: var(--margin-bottom);
+    transition: border-left 0.2s ease;
 }
 
 .tab:hover {

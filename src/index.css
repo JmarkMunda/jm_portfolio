@@ -45,24 +45,30 @@ font-family: 'Josefin Sans', sans-serif;
     background: var(--clr-gradient-background);
 }
 
-.container {
-    padding: 4rem;
-}
-
-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+}
+
+section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 2rem;
 }
 
 h1 {
@@ -88,15 +94,15 @@ h3 {
         font-size: 1.2rem;
     }
     .container {
-        padding: 8rem 10rem;
+        width: 1000px;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
     }
     
 }
 
 @media screen and (max-width: 500px) {
-    .container {
-        padding: 2rem;
-    }
     section {
         flex-direction: column;
     }
