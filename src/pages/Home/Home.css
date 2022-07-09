@@ -6,10 +6,12 @@
     background: var(--clr-gradient-background);
     position: relative;
 }
-/*  TEXT ==================== */
+/*  TEXT ==================== */    
+
 .home-text h3 {
     margin: 0 0 10px 5px;
     color: var(--clr-primary-gray-3);
+    text-align: left;
 }
 .home-text h1 {
     color: var(--clr-primary-gray);
