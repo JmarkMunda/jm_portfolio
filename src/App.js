@@ -12,7 +12,7 @@ function App() {
       <Home />
       <About />
       <Tabs />
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 }

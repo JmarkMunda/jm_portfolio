@@ -2,3 +2,87 @@
 #projects {
     background: var(--clr-gradient-background-reverse);
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    box-shadow: 1px 1px 8px rgb(184, 184, 184);
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-image {
+
+}
+
+.project-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-text {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project p {
+    color: var(--clr-primary-gray-2);
+    padding: 0.8rem;
+}
+
+.project-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.project-title a {
+    text-decoration: underline;
+}
+
+.github-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.project-description {
+    color: var(--clr-primary-gray-2);
+}
+
+.project-libraries {
+    width: 100%;
+    margin-top: 1rem;
+}
+.project-libraries ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-libraries ul li {
+    color: var(--clr-primary-gray-3);
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    margin-bottom: 0.5rem;
+}
+
+

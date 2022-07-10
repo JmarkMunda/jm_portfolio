@@ -12,6 +12,7 @@ font-family: 'Josefin Sans', sans-serif;
     --clr-primary-gray-3: rgb(90, 90, 90);
     --clr-primary-gray-alpha: rgba(90, 90, 90, 0.5);
     --clr-primary-gray-alpha-2: rgba(90, 90, 90, 0.1);
+    --clr-primary-gray-alpha-3: rgba(90, 90, 90, 0.3);
     --clr-secondary-aqua: rgb(89, 243, 235);
 
     /* BACKGROUND COLORS */
@@ -53,18 +54,12 @@ font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100%;
-    display: flex;  
-    justify-content: center;
-}
-
 /* ===========
     GLOBALS
    ============ */
 
 section {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -93,6 +88,12 @@ section {
     background-color: var(--clr-primary-gray-alpha);
     width: 100%;
     height: 1px;
+}
+
+.underline {
+    width: 80%;
+    height: 1px;
+    background-color: var(--clr-primary-gray-alpha-3);
 }
 
 h1 {
