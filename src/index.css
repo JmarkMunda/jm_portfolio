@@ -13,6 +13,7 @@ font-family: 'Josefin Sans', sans-serif;
     --clr-primary-gray-alpha: rgba(90, 90, 90, 0.5);
     --clr-primary-gray-alpha-2: rgba(90, 90, 90, 0.1);
     --clr-primary-gray-alpha-3: rgba(90, 90, 90, 0.3);
+    --clr-primary-gray-alpha-4: rgba(50, 50, 50, 0.8);
     --clr-secondary-aqua: rgb(89, 243, 235);
 
     /* BACKGROUND COLORS */
