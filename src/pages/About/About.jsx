@@ -5,7 +5,6 @@ import { HiOutlineMail } from "react-icons/hi";
 
 import { messages } from "../../personal-data";
 import profileImg from "../../assets/user-profile.svg";
-import Tabs from "../../components/Tabs/Tabs";
 
 const About = () => {
   return (
@@ -40,6 +39,17 @@ const About = () => {
             </button>
           </div>
         </article>
+        <div className="skills-container">
+          <img src="/html-5.png" alt="html" />
+          <img src="/css-3.png" alt="css" />
+          <img src="/js.png" alt="js" />
+          <img src="/reactjs.png" alt="reactjs" />
+          <img src="/nodejs.png" alt="nodejs" />
+          <img src="/tailwind.png" alt="tailwind" />
+          <img src="/sass.png" alt="sass" />
+          <img src="/git.png" alt="git" />
+          <img src="/firebase.png" alt="firebase" />
+        </div>
       </div>
     </section>
   );

@@ -72,7 +72,6 @@ section {
 }
 
 .section-header {
-    /* background-color: aqua; */
     margin-bottom: 3rem;
     display: flex;
     justify-content: flex-start;
