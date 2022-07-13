@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar'
 import Projects from './pages/Projects/Projects';
 import Tabs from './components/Tabs/Tabs';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Tabs />
       <Projects />
+      <Contact />
     </>
   );
 }

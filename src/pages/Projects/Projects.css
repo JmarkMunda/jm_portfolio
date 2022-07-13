@@ -1,8 +1,4 @@
 
-#projects {
-    background: var(--clr-gradient-background-reverse);
-}
-
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -15,6 +11,7 @@
 }
 
 .project {
+    background-color: rgb(248, 248, 248);
     margin-bottom: 6rem;
     box-shadow: 1px 1px 8px rgb(185, 185, 185);
     text-align: center;
