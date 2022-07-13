@@ -20,34 +20,53 @@ const About = () => {
             })}
             <button className="btn">Grab Resume</button>
           </div>
-          <img src={profileImg} alt="photo" />
-          <div className="social-icons">
-            <button>
-              <a href="mailto:jaymakmunda26@gmail.com">
-                <HiOutlineMail />
-              </a>
-            </button>
-            <button>
-              <a href="https://www.linkedin.com/in/jay-mark-munda-18a208233/">
-                <FaLinkedin />
-              </a>
-            </button>
-            <button>
-              <a href="https://github.com/JmarkMunda">
-                <FaGithub />
-              </a>
-            </button>
+          <div className="image-container">
+            <img src={profileImg} alt="photo" />
+            <div className="social-icons">
+              <button>
+                <a href="mailto:jaymakmunda26@gmail.com">
+                  <HiOutlineMail />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://www.linkedin.com/in/jay-mark-munda-18a208233/"
+                  target="_blank">
+                  <FaLinkedin />
+                </a>
+              </button>
+              <button>
+                <a href="https://github.com/JmarkMunda" target="_blank">
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
           </div>
         </article>
         <div className="skills-container">
-          <img src="/html-5.png" alt="html" />
-          <img src="/css-3.png" alt="css" />
-          <img src="/js.png" alt="js" />
-          <img src="/reactjs.png" alt="reactjs" />
-          <img src="/nodejs.png" alt="nodejs" />
+          <img
+            src="https://img.icons8.com/ios/50/000000/html-5--v2.png"
+            alt="html"
+          />
+          <img src="https://img.icons8.com/ios/50/000000/css3.png" alt="css" />
+          <img
+            src="https://img.icons8.com/ios/50/000000/javascript--v1.png"
+            alt="js"
+          />
+          <img
+            src="https://img.icons8.com/ios/50/000000/react-native--v1.png"
+            alt="reactjs"
+          />
+          <img
+            src="https://img.icons8.com/windows/64/000000/node-js.png"
+            alt="nodejs"
+          />
           <img src="/tailwind.png" alt="tailwind" />
-          <img src="/sass.png" alt="sass" />
-          <img src="/git.png" alt="git" />
+          <img
+            src="https://img.icons8.com/material-outlined/48/000000/sass.png"
+            alt="sass"
+          />
+          <img src="https://img.icons8.com/ios/50/000000/git.png" alt="git" />
           <img src="/firebase.png" alt="firebase" />
         </div>
       </div>
