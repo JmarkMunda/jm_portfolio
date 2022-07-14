@@ -1,20 +1,45 @@
 import React from "react";
 import "./Navbar.css";
+import { FiMenu } from "react-icons/fi";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const linksContainerRef = useRef(null);
+  const linkRef = useRef(null);
+
+  useEffect(() => {
+    const linksHeight = linkRef.current.getBoundingClientRect().height;
+
+    if (toggleMenu) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = "0px";
+    }
+  }, [toggleMenu]);
+
   return (
     <nav>
-      <header className="logo">
-        <a href="#home">Jm</a>
-      </header>
-      <ul className="nav-links">
-        <li className="links">
-          <a href="#about">About</a>
-        </li>
-        <li className="links">
-          <a href="#projects">Projects</a>
-        </li>
-      </ul>
+      <div className="nav-header">
+        <header className="logo">
+          <a href="#home">Jm</a>
+        </header>
+        <button className="menu-btn" onClick={() => setToggleMenu(!toggleMenu)}>
+          <FiMenu />
+        </button>
+      </div>
+      {/* links */}
+      <div className="nav-links" ref={linksContainerRef}>
+        <ul ref={linkRef}>
+          <li className="links">
+            <a href="#about">About</a>
+          </li>
+          <li className="links">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

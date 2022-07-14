@@ -1,4 +1,5 @@
 
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -151,6 +152,7 @@
 
 .project-title a {
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .github-icon {
@@ -176,6 +178,7 @@
     color: var(--clr-primary-gray-3);
     font-size: 0.8rem;
     text-transform: lowercase;
+    padding: 0.2rem 0.8rem;
     margin-bottom: 0.5rem;
 }
 

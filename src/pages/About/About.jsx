@@ -2,9 +2,11 @@ import React from "react";
 import "./About.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-
 import { messages } from "../../personal-data";
 import profileImg from "../../assets/user-profile.svg";
+
+// Resume
+import resume from "../../assets/Resume.pdf";
 
 const About = () => {
   return (
@@ -18,8 +20,11 @@ const About = () => {
               const { id, text } = message;
               return <p key={id}>{text}</p>;
             })}
-            <button className="btn">Grab Resume</button>
+            <a href={resume} download>
+              <button className="btn">Grab Resume</button>
+            </a>
           </div>
+          {/*  ------------ IMAGE ------------ */}
           <div className="image-container">
             <img src={profileImg} alt="photo" />
             <div className="social-icons">

@@ -24,9 +24,9 @@ const Projects = () => {
             topics,
           } = project;
           return (
-            <div className="project-container">
+            <div key={id} className="project-container">
               <div className="project-number">{number}</div>
-              <div key={id} className="project">
+              <div className="project">
                 <a href={link} target="_blank" className="project-image">
                   <img src={image} alt="project" />
                   <div className="project-cursor">View Project</div>
@@ -46,8 +46,8 @@ const Projects = () => {
                   <div className="underline"></div>
                   <div className="project-topics">
                     <ul>
-                      {topics.map((item) => {
-                        return <li>{item}</li>;
+                      {topics.map((item, index) => {
+                        return <li key={index}>{item}</li>;
                       })}
                     </ul>
                   </div>
