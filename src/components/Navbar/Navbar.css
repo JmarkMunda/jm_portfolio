@@ -1,55 +1,86 @@
-
 nav {
-    width: 100%;
-    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--main-side-padding);
-}
-
-.logo > a{
-    font-family: 'Splash', cursive;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.nav-links {
-    display: flex;
-}
-
-.links {
-    position: relative;
-    padding-bottom: 4px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
     
 }
 
-.links::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 1px;
-    background-color: var(--clr-primary-gray);
-    transition: all 0.2s ease-in-out;
+.nav-active {
+    background: linear-gradient(rgb(220, 220, 220), rgba(255, 255, 255, 0.2));
 }
 
-.links:hover::before {
-    width: 100%;
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
-a {
-    text-decoration: none;
+.menu-btn {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
+.logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Splash', cursive;
+}
+
+.logo a, .links a {
     color: var(--clr-primary-gray);
+    text-transform: capitalize;
 }
 
-li{
-    list-style-type: none;
-    margin: 0 20px;
+.nav-links {
+    overflow: hidden;
+    transition: all 0.58s ease;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(220, 220, 220, 0.2);
 }
 
+.nav-links ul {
+    padding: 2rem 0;
+}
+
+.links{
+    padding: 0.8rem;
+}
+    
+@media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--main-side-padding);
+    }
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        height: auto !important;
+        background: none;
+    }
+
+    .nav-links ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .links {
+        padding: 0.5rem 1rem;
+        transition: 0.2s ease;
+    }
+
+    .links:hover {
+        background-color: aquamarine;
+    }
+}

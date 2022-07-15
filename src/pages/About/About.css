@@ -1,35 +1,52 @@
 
-
-
-.about-header {
+#about > div{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    -webkit-text-stroke: 0.1px var(--clr-primary-gray-alpha);
-    z-index: -1;
+    flex-direction: column;
 }
 
 .about-container {
-    width: 50%;
-    height: auto;
-    padding: 2rem;
+    display: flex;
+    align-items: center;
 }
 
-/*============= 
-    Text side
-  ============= */
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.skills-container img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transition: all 0.2s ease-in-out;
+}
+
+.skills-container img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* TEXT =================== */
+.text-container {
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
 .about-container h2 {
     margin-bottom: 2rem;
+    color: var(--clr-primary-gray-2);
 }
 
 .about-container p {
     margin-bottom: var(--margin-bottom);
 }
 
-/*============= 
-  Download Button
-  ============= */
+/* DOWNLOAD BUTTON ==================== */
+
 .btn {
     position: relative;
     padding: var(--button-padding);
@@ -38,6 +55,7 @@
     border-radius: 20px;
     transition: all .3s ease-in;
 }
+
 .btn:hover {
     color: #fff;
     cursor: grab;
@@ -57,34 +75,29 @@
     opacity: 0;
     transition: all .3s ease-in;
 }
+
 .btn:hover::before {
     width: 100%;
     opacity: 1;
 }
 
-/*============= 
-    Photo side
-  ============= */
+/*  IMAGE ============= */
+.image-container {
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex: 1;
+}
 
 .about-container img {
-    width: 100%;   
-    height: 14rem;
-    /* filter: drop-shadow(8px 5px 5px rgb(92, 92, 92)); */
-}
-.about-container.photo {
-    text-align: center;
+    width: 80%;   
+    height: 15rem;
 }
 
-/*============= 
-    Underline
-  ============= */
-.underline {
-    border-top: 1px solid var(--clr-primary-gray-alpha);
-    margin: 1rem 0;
-}
-
+/* ICONS ================= */
 .social-icons {
-    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 
 .social-icons button{
@@ -102,19 +115,8 @@
     color: var(--clr-primary-gray);
 }
 
-
 @media screen and (max-width: 900px) {
-    .about-section {
-        flex-direction: column;
-        height: auto;
-    }
     .about-container {
-        width: 100%;
+        flex-direction: column;
     }
-}
-
-#tabs-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }

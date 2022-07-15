@@ -38,13 +38,8 @@ const personal = [
     },
     {
         label: "Address:  ",
-        text: "Blk 21 Lot 16 Phase 1 Balagtas Heights Brgy.Santol Balagtas, Bulacan"
-    },
-        
-        
-        
-        
-        
+        text: "Balagtas Bulacan, Philippines"
+    },  
 ]
 
 const tabs = [
@@ -69,15 +64,15 @@ const tabs = [
 const education = [
         {
             id: 1,
-            level: "Elementary",
-            location: "Kapitbahayan Elementary School",
-            date: "2004 - 2011",
+            level: "College",
+            location: "STI College Balagtas - Bachelor of Science in Information Technology",
+            date: "2018 - 2022"
         },
         {
             id: 2,
-            level: "High School",
-            location: "Pres. Sergio Osmena High School",
-            date: "2011 - 2014",
+            level: "Vocational",
+            location: "ACCESS Computer College - Computer Technician",
+            date: "2015 - 2017",
         },
         {
             id: 3,
@@ -87,16 +82,16 @@ const education = [
         },
         {
             id: 4,
-            level: "Vocational",
-            location: "ACCESS Computer College - Computer Technician",
-            date: "2015 - 2017",
+            level: "High School",
+            location: "Pres. Sergio Osmena High School",
+            date: "2011 - 2014",
         },
         {
             id: 5,
-            level: "College",
-            location: "STI College Balagtas - Bachelor of Science in Information Technology",
-            date: "2018 - 2022"
-        }
+            level: "Elementary",
+            location: "Kapitbahayan Elementary School",
+            date: "2004 - 2011",
+        },
 ]
 
 const awards = [
