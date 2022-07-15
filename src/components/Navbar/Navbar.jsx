@@ -5,9 +5,20 @@ import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isNavActive, setIsNavActive] = useState(false);
 
   const linksContainerRef = useRef(null);
   const linkRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setIsNavActive(true);
+      } else {
+        setIsNavActive(false);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     const linksHeight = linkRef.current.getBoundingClientRect().height;
@@ -20,7 +31,7 @@ const Navbar = () => {
   }, [toggleMenu]);
 
   return (
-    <nav>
+    <nav className={isNavActive ? "nav-active" : ""}>
       <div className="nav-header">
         <header className="logo">
           <a href="#home">Jm</a>
