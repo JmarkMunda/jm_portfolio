@@ -97,37 +97,42 @@ const education = [
 const awards = [
         {
             id: 1,
-            text: `Deans's List`,
+            text: `Cum Laude`,
             from: 'STI College Balagtas'
         },
         {
             id: 2,
+            text: `Deans's List`,
+            from: 'STI College Balagtas'
+        },
+        {
+            id: 3,
             text: `Python Essentials Course Completion`,
             from: 'Python Institute'
         },
         {
-            id: 3,
+            id: 4,
             text: `Compute Cloud Services Participation`,
             from: 'Huawei'
         },
         {
-            id: 4,
+            id: 5,
             text: `Image Management & Elastic Volume Service Participation`,
             from: 'Huawei'
            
         },
         {
-            id: 5,
+            id: 6,
             text: `SAP Business One Certificate`,
             from: 'STI College Balagtas'
         },
         {
-            id: 6,
+            id: 7,
             text: `Advance SAP Certificate`,
             from: 'STI College Balagtas'
         },
         {
-            id: 7,
+            id: 8,
             text: `Data Encoder OJT Certificate`,
             from: 'RMES Globe Telecom'
         }        

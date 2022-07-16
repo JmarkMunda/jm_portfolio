@@ -21,7 +21,7 @@ const Tabs = () => {
                 const { title, icon } = item;
                 return (
                   <button
-                    className={`tab ${value == index && "active-tab"}`}
+                    className={`tab ${value === index && "active-tab"}`}
                     key={item.id}
                     onClick={() => setValue(index)}>
                     <span>{icon}</span>

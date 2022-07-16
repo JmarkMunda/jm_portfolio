@@ -43,10 +43,10 @@ const Navbar = () => {
       {/* links */}
       <div className="nav-links" ref={linksContainerRef}>
         <ul ref={linkRef}>
-          <li className="links">
+          <li className="links" onClick={() => setToggleMenu(false)}>
             <a href="#about">About</a>
           </li>
-          <li className="links">
+          <li className="links" onClick={() => setToggleMenu(false)}>
             <a href="#projects">Projects</a>
           </li>
         </ul>
